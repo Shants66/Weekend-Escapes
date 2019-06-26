@@ -18,10 +18,37 @@
 
     <div class="pageimage">
       <img src="./Images/Packing.jpg" alt="packing">
-
-      </div>
     </div>
 
-  </body>
+      <form id="form1">
 
-</html>
+        <div class="indexcommentary">
+          <h3>Not sure what to pack for your weekend away? Let us help you...</h3>
+          <h6>Where are you going?</h6>
+            <label for="var_string"><input type="radio" name="variable" value="1" id="var_string" />City</label>
+            <label for="var_join"><input type="radio" name="variable" value="2" id="var_join" />Beach</label>
+            <label for="var_info"><input type="radio" name="variable" value="3" id="var_info" />Mountains</label>
+            <label for="var_info"><input type="radio" name="variable" value="4" id="var_info" />Countryside</label>
+
+          <h6>What's the vibe for your trip?</h6>
+            <label for="sub_string"><input type="radio" name="sub" value="10" id="sub_string"/>Luxury</label>
+            <label for="sub_join"><input type="radio" name="sub" value="20" id="sub_join"/>Relaxed and laid back</label>
+            <label for="sub_info"><input type="radio" name="sub" value="30" id="sub_info" />Party central</label>
+            <label for="sub_condition"><input type="radio" name="sub" value="40" id="sub_condition" />Adventure-filled</label>
+            <label for="sub_condition"><input type="radio" name="sub" value="50" id="sub_condition" />Sporty</label>
+
+          <h6>What will the weather be like?</h6>
+            <label for="cat_string"><input type="radio" name="con" value="100" id="cat_string" />Hot</label>
+            <label for="cat_join"><input type="radio" name="con" value="200" id="cat_join" />Cold</label>
+            <label for="cat_info"><input type="radio" name="con" value="300" id="cat_info" />Rainy</label>
+            <label for="cat_condition"><input type="radio" name="con" value="400" id="cat_condition" />Variable</label>
+
+          <input type="submit" value="Submit">
+
+            </form>
+
+          </div>
+
+      </body>
+
+    </html>
