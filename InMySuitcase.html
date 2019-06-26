@@ -20,6 +20,8 @@
       <img src="./Images/Packing.jpg" alt="packing">
     </div>
 
+
+
       <form id="form1">
 
         <div class="indexcommentary">
@@ -28,14 +30,13 @@
             <label for="var_string"><input type="radio" name="variable" value="1" id="var_string" />City</label>
             <label for="var_join"><input type="radio" name="variable" value="2" id="var_join" />Beach</label>
             <label for="var_info"><input type="radio" name="variable" value="3" id="var_info" />Mountains</label>
-            <label for="var_info"><input type="radio" name="variable" value="4" id="var_info" />Countryside</label>
+            <label for="var_condition"><input type="radio" name="variable" value="4" id="var_condition" />Countryside</label>
 
           <h6>What's the vibe for your trip?</h6>
             <label for="sub_string"><input type="radio" name="sub" value="10" id="sub_string"/>Luxury</label>
             <label for="sub_join"><input type="radio" name="sub" value="20" id="sub_join"/>Relaxed and laid back</label>
             <label for="sub_info"><input type="radio" name="sub" value="30" id="sub_info" />Party central</label>
             <label for="sub_condition"><input type="radio" name="sub" value="40" id="sub_condition" />Adventure-filled</label>
-            <label for="sub_condition"><input type="radio" name="sub" value="50" id="sub_condition" />Sporty</label>
 
           <h6>What will the weather be like?</h6>
             <label for="cat_string"><input type="radio" name="con" value="100" id="cat_string" />Hot</label>
@@ -46,6 +47,33 @@
           <input type="submit" value="Submit">
 
             </form>
+
+            <script>
+              document.getElementById("form1").onsubmit=function() {
+                variable = parseInt(document.querySelector('input[name = "variable"]:checked').value);
+                sub = parseInt(document.querySelector('input[name = "sub"]:checked').value);
+                con = parseInt(document.querySelector('input[name = "con"]:checked').value);
+
+                result = variable + sub + con;
+
+                 document.getElementById("grade").innerHTML = result ;
+
+                 if (result == 121) {result2 = "Summer in City.<br /><img src='./images/summer packing.jpg' width='20px;' />"};
+                 if (result == 213) {result2 = "Luxury Ski Vibes.<br /><img src='./images/skiing.jpeg' width='100' />"};
+                 if (result == 253) {result2 = "Ski and snow packing list"};
+
+                 document.getElementById("grade2").innerHTML = result2;
+
+                 return false; // required to not refresh the page; just leave this here
+                } //this ends the submit function
+
+            </script>
+
+            <div class="suitcaseresult">
+              <p>Your packing list is: <span id="grade">__</span></p>
+              <p id="grade2"></p>
+            </div>
+
 
           </div>
 

@@ -134,6 +134,11 @@ h6 {
   margin-left: 130px;
   padding top: 0px;
   padding-bottom: 0px;
+  font color: pink;
+}
+
+.suitcaseresult {
+color: pink; 
 }
 
 ul a{
@@ -191,13 +196,14 @@ ul a{
   }
 
   .fa {
-  padding: 20px;
-  font-size: 20px;
-  width: 10px;
-  height: 10px;
+  padding: 16px;
+  font-size: 16px;
+  text-align: center;
+  width: 5px;
+  height: 5px;
 }
 
-/* Add a hover effect if you want */
+/* Add a hover effect */
 .fa:hover {
   opacity: 0.7;
 }
@@ -213,6 +219,18 @@ ul a{
 /* Twitter */
 .fa-twitter {
   background: #55ACEE;
+  color: white;
+}
+
+/* Pinterest */
+.fa-pinterest {
+  background: red;
+  color: white;
+}
+
+/* Instagram */
+.fa-instagram {
+  background: #b30086;
   color: white;
 }
 
@@ -344,7 +362,8 @@ ul a{
   /* coding for in my suitcase */
   label {
   display: block;
-  font-size: 1em;
+  color: black;
+  font-size: 1.2em;
   }
 
   input[type=radio] {
@@ -352,10 +371,6 @@ ul a{
     margin-left: 100px;
     margin-top: 10px;
     margin-bottom: 10px;
-  }
-
-  submit {
-
   }
   /* input {
   width: 40px;
@@ -382,12 +397,13 @@ ul a{
   .aboutcontent {
     background-color: coral;
     padding: 20px;
+    text-align: center;
   }
 
   /* Create two columns that float next to eachother */
   .aboutcolumn {
     float: left;
-    width: 37%;
+    width: 38%;
     margin-left: 110px;
     padding: 10px;
   }
